@@ -1,0 +1,9 @@
+{
+  "name": "comp-slider",
+  "type": "vcomponent",
+  "version": "1.0.0",
+  "properties": {
+    "cards": { "type": "Array" }
+  },
+  "events": ["cardAction"]
+}

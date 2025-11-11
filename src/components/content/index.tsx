@@ -6,10 +6,12 @@
  * @ignore
  */
 import { h } from "preact";
+import { CompSlider } from "comp-slider/comp-slider";
 
 export function Content() {
   return (
     <div class="oj-web-applayout-max-width oj-web-applayout-content">
+      <CompSlider></CompSlider>
     </div>
   );
 };

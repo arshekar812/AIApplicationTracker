@@ -1,0 +1,39 @@
+/* This file is where css selectors for the component go.
+   There will be hard coded properties and properties controlled by variables, for example
+
+   comp-slider .comp-slider-value-text {
+   color: var(--comp-slider-value-text-color);
+   display: inline-block;
+	 }
+*/
+
+comp-slider:not(.oj-complete){
+  visibility: hidden;
+}
+
+comp-slider{
+	min-height: 50px;
+	width: 50px;
+}
+
+comp-slider[hidden]
+{
+  display: none;
+}
+
+.comp-slider-card {
+  width: 180px;            /* fixed width */
+  height: 230px;           /* fixed height */
+  flex: 0 0 auto;          /* prevents stretch/shrink in conveyor */
+  box-sizing: border-box;
+  display: flex;           
+  align-items: center;     /* center contents horizontally */
+  justify-content: center; /* center contents vertically */
+}
+
+.comp-slider-card .comp-slider-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;       /* keeps text centered */
+}
