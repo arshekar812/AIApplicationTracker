@@ -32,6 +32,9 @@
       ],
       "comp-slider/*": [
         "./src/components/comp-slider/*"
+      ],
+      "job-status/*": [
+        "./src/components/job-status/*"
       ]
     },
     "declaration": true,

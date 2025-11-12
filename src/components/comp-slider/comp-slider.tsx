@@ -20,6 +20,7 @@ type CardItem = {
 
 type Props = {
   cards?: CardItem[];
+  
 } & ObservedGlobalProps<never>;
 
 /**
@@ -170,19 +171,19 @@ function CompSliderImpl(props: Props) {
   const fireCardAction = (detail: { action: CardAction }) => {
     (props as any).onCardAction?.(detail);
     if (!(props as any).onCardAction) {
-      // fetch("/api/showStatus", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(detail.action.postback.variables)
-      // });
-
-      fetch("http://localhost:4000/api/job-status", {
+      fetch("/api/showStatus", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({"email":"25866@invalidemail.com"})
-      }).then((data)=>{
-        console.log(detail.action.postback.variables)
+        body: JSON.stringify(detail.action.postback.variables)
       });
+
+      // fetch("http://localhost:4000/api/job-status", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/json" },
+      //   body: JSON.stringify({"email":"25866@invalidemail.com"})
+      // }).then((data)=>{
+      //   console.log(detail.action.postback.variables)
+      // });
     }
   };
 

@@ -1,0 +1,10 @@
+{
+  "name": "job-status",
+  "version": "1.0.0",
+  "type": "vcomponent",
+  "properties": {
+    "jobStep": { "type": "string" },
+    "jobCode": { "type": "string" },
+    "jobStatus": { "type": "string" }
+  }
+}
